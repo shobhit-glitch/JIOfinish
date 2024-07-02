@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sty.css">
+    <title>Document</title>
+    <style> 
+        input[type=text] {
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          
+          border: none;
+          border-bottom: 1.55px solid rgb(24, 2, 2);
+        }
+        input[type=number] {
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          
+          border: none;
+          border-bottom: 1.55px solid rgb(24, 2, 2);
+        }
+        input[type=tel]{
+            width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          
+          border: none;
+          border-bottom: 1.55px solid rgb(24, 2, 2);
+          
+        }
+
+        input[type="submit"] {
+    background-color: #40e745;
+    color:rgb(241, 241, 241);
+    font-weight: bolder;
+    font-size: 15px;
+    width: 150px;
+    height: 50px;
+    border-radius: 35px;
+    align-items: center;
+    border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px #888888;
+  }
+         input[type="submit"]:hover{
+    background-color: #1abc40;
+    color: whitesmoke;
+    border: 1px solid;
+  padding: 10px;
+  box-shadow: \2px 2px #888888;
+    
+  }
+  legend { /* Text and background colour, blue on light gray */
+color:  rgb(51, 70, 147);
+background-color:#ddd;
+
+
+
+  }
+  
+  fieldset{
+    border: dotted;
+
+  }
+  .h4{
+    text-decoration: underline;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    width: 100%;
+    position: relative;
+    display: flexbox; 
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+.quote{
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    font-weight: 3000px;
+}
+.h1{
+    /* align-self: center; */
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 42px;
+    
+}
+.h3{
+    align-items: center;
+    display: flexbox;
+    margin-bottom: 0;
+
+}
+.topbar{
+    padding: 1000;
+    margin: 0;
+    background-color: rgb(51, 70, 147);
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+.bottombar{
+    display: inline-block;
+
+}
+.title{
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 430px;
+    color: whitesmoke;
+    background-color:rgb(51, 70, 147);
+}
+.name{
+    display: inline-block;
+    display: inline;
+}
+.Address{
+    float: left;
+}
+.input-field{
+    border: 0;
+    border-top: 0;
+    width: 10%;
+
+}
+.container{
+    background: rgb(0, 0, 0) ;
+    color: whitesmoke;
+    background-size: cover;
+    background-position: right;
+    border: whitesmoke;
+    max-width: 130px;
+    height: 150px;
+    margin: auto;
+    object-position: top;
+
+}
+
+/* .submit{
+    background-color: #eeddcf;
+    color:rgb(83, 234, 121);
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    
+} */
+
+form{
+    align-items: center;
+    width: 1500px;
+    margin-top: 20px;
+
+}
+/* fieldset{
+    
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+} */
+
+.disc{
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.disclaimer{
+    text-decoration: underline;
+}
+
+        
+
+        </style>
+</head>
+<body>
+    <div class="topbar">
+        <!-- D:\jio yt tut\a logo for a co 0.png -->
+        <!-- <a href="index.html"><img src="/a logo for a co 0.png" alt="a logo for a co 0" width="130px" height="150" ></a> -->
+        <a href="https://ibb.co/CHckVhz"><img src="https://i.ibb.co/MCvYPMs/a-logo-for-a-co-0.png" alt="a-logo-for-a-co-0" border="0" width="130px" height="150" ></a>
+       <div class="title">
+        <h1 class="h1">LAKEVIEW UNIVERSITY</h1>
+        <p>
+            <div class="quote">Discover Limitless Horizons at Lakeview College</div>
+            <br><br>
+            <h3 class="h3">REGISTRATION FORM</h3>
+        </p>
+       </div><!--end of the title div-->
+       <div class="container">
+        
+
+       </div><!--end of container div -->
+        </div><!--end of div topbar-->
+        <div class="bottombar">
+        <form  method="post" action="/" enctype="multipart/form-data">
+            <fieldset >
+                <legend>
+                    <h3>Personal Information </h3><!--header for legend-->
+                </legend>
+                 
+            <input type="text" name="name" id="name" class="input-field" placeholder="Enter Student's Name">
+            
+            <br>
+            <BR></BR>
+            
+            <!-- D.O.B --> Date of Birth (DD-MM-YYYY)  : &nbsp;
+            <input type="date" name="dateofbirth" 
+            placeholder="dd-mm-yyyy" value=""
+            min="1997-01-01" max="2030-12-31">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- <li>Gender</li>
+        <select name="Gender" id="Gender">
+            <option value="none"selected disabled hidden>Select an Option</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option> -->
+            
+            Gender :
+            <input type="radio" name="gender" id="Male">
+            &nbsp;
+            <span id="Male" >Male</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" id="Female">
+            <span id="Female" >Female</span>
+
+            <!-- <label 
+            for="Male" id="rad">Male</label>
+            <label for="Female" id="rad">Female</label>
+            <br>&nbsp; -->
+
+                               <!-- Nationality -->
+        <input type="text" name="Nationality" id="Nationality" placeholder="Enter the Nationality">
+        <input type="text" name="Address" id="Address" placeholder="Enter your Address">
+
+        <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number in the Format: 1234567890"
+       pattern="[0-9]{10}"
+       required>
+
+<br>
+<br>
+
+<label for="email"></label>
+<input type="text" id="email" name="email" placeholder="Enter your E-mail">
+    
+        <br><br>
+
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>
+                    <h3>Educational Background</h3>
+                </legend>
+
+                High School/Secondary School Name
+        <input type="text" name="school" id="school">
+        <br><br>
+        Graduation year (YYYY)
+        <input type="number" class="gyear" id="gyear" name="gyear">
+        <br><br>
+        Percentage
+        <input type="number" name="Percentage" id="Percentage">
+        <br><br>
+        Academic Achievements or Awards
+        <input type="text" class="Achievements" id="Achievements" name="Achievements">
+        <br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>
+                    <h3>Desired Programme & Course</h3>
+                </legend>
+                <br>
+                <label for="programme">Choose a Programme:</label>
+                
+
+
+
+    
+                <select name="programme" id="programme" name="programme">
+                    <option value="none"selected disabled hidden>Select an Option</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="M.Sc">M.Sc</option>
+                <option value="PhD">PhD</option>
+                </select>
+                <br><br>
+            
+                <label for="course">Choose a Course:</label>
+                <select name="course" id="course" >
+                    <option value="none"selected disabled hidden>Select an Option</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Computer Science Engineering">Computer Science Engineering</option>
+                    <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+                    <option value="Chemical Engineering">Chemical Engineering</option>
+                    <option value="Aerospace Engineering">Aerospace Engineering</option>
+                    <option value="Biomedical Engineering">Biomedical Engineering</option>
+                    
+                    </select>
+                    <br> 
+                    <br>
+                    
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>Statement of Purpose/Essay</h3>
+                    
+                </legend>
+                <br>
+                <label for="answer">Why do you think you will be a good fit in our college ?</label>
+    <br>
+    <textarea id="answer1" name="answer1" rows="4" cols="50"></textarea>
+    <br><br>
+
+    <label for="answer">How do you plan on using your college education in future ?</label>
+
+    <br>
+    <textarea id="answer2" name="answer2" rows="4" cols="50"></textarea>
+    <br>
+    <br>
+    <label for="image">Select an Image:</label>
+    <input type="file" name="image" required><br>
+            </fieldset>
+
+            <label for="disclaimer">
+                <h4>DISCLAIMER</h4>
+            </label>
+            <BR></BR>
+            <div class="disc">
+                <input type="checkbox" id="terms-checkbox">The information provided by the person is to the best of their knowledge and understanding. However, please be aware that any incorrect or misleading information provided may result in the cancellation of admission or other relevant consequences. It is crucial to ensure the accuracy and truthfulness of all information provided during the admission process.
+        </div>
+
+            <!-- <label for="name" class="input-label">Enter Student's name</label> -->
+            
+           
+
+            <br><br>
+            <input type="submit" value="Submit" name="Submit" id="submit" >
+            <br><br>
+        </form>
+    </div><!--end of div bottombar-->
+</body>
+</html>
